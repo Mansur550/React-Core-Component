@@ -5,9 +5,8 @@ function App() {
 
   return (
     <>
-      <h1>RRACT + VITE</h1>
-      <Person />
-      <Sports />
+      <h1 className='text-xl'>REACT Core Concepts</h1>
+
 
     </>
   )
