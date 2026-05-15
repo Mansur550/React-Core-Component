@@ -10,10 +10,28 @@ function App() {
       <Student name="Dristy" dept="CSE" tool="Laptop"></Student>
       <Student name="Tahsin" dept="CSE" tool="Pc"></Student>
 
-
-
+      <Player name="CR7" goal="960"></Player>
+      <Player name="Messi" goal="760"></Player>
+      <Player name="Naymer" goal="460"></Player>
 
     </>
+  )
+}
+
+function Player({name, goal}) {
+  return (
+    <div style={{
+      border: '2px solid red',
+      borderRadius: '10px',
+      padding: '10px',
+      margin: '20px',
+      marginTop: "20px"
+    }}
+    >
+      <p>Name:{name}</p>
+      <p>Goal:{goal}</p>
+
+    </div>
   )
 }
 
