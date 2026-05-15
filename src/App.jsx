@@ -17,7 +17,10 @@ function App() {
       <Player name="Naymer" goal="460"></Player> */}
 
 
-      <ToDo task= "Learn React"></ToDo>
+      <ToDo task= "Learn React" isDone={true}></ToDo>
+      <ToDo task= "Reviice Js" isDone={true}></ToDo>
+      <ToDo task= "Take a shower" isDone={false}></ToDo>
+      <ToDo task= "Eat Now" isDone={false}></ToDo>
 
     </>
   )
