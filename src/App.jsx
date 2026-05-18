@@ -1,34 +1,47 @@
 
 import './App.css'
 // import './Components/ToDo.jsx'
-import ToDo from './Components/ToDo'
+// import ToDo from './Components/ToDo'
 import Actor from './Components/actor'
 import Singers from './Components/singers'
-const actors =["Mansur", "Dristy", "Tahsin", "Naymer", "Messi", "CR7"]
+import Library from './Components/library'
 
-const singers=[
-  {id:1, name:"Arijit Singh", age:40},
-  {id:1, name:"Atif Aslam", age:50},
-  {id:1, name:"Warfaz", age:40},
-  {id:1, name:"Balam", age:38},
-]
+
+// const actors =["Mansur", "Dristy", "Tahsin", "Naymer", "Messi", "CR7"]
+
+
 
 
 function App() {
+  const singers = [
+    { id: 1, name: "Arijit Singh", age: 40 },
+    { id: 2, name: "Atif Aslam", age: 50 },
+    { id: 3, name: "Warfaz", age: 40 },
+    { id: 4, name: "Balam", age: 38 },
+  ]
 
+  const books = [
+    { id: 1, name: "physics", price: "199" },
+    { id: 2, name: "Math", price: "210" },
+    { id: 3, name: "Biology", price: "220" },
+    { id: 4, name: "chemistry", price: "240" },
+  ]
   return (
     <>
+
+      <Library></Library>
+
       <h1 className='text-xl'>REACT Core Concepts</h1>
 
-      {
+      {/* {
         actors.map(actor =><Actor actor={actor} ></Actor>) // map is used to loop through the array and return a new array of components
-      }
+      } */}
 
       {
-        singers.map(singer => <Singers key={singer.id} siinger={singer}></Singers> )
+        singers.map(singer => <Singers key={singer.id} siinger={singer}></Singers>)
       }
 
-      
+
 
       {/* <Student name="Mansur" dept="CSE " tool="Mobile"></Student>
       <Student name="Dristy" dept="CSE" tool="Laptop"></Student>
