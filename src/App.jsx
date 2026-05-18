@@ -2,12 +2,21 @@
 import './App.css'
 // import './Components/ToDo.jsx'
 import ToDo from './Components/ToDo'
+import Actor from './Components/actor'
 
+const actors =["Mansur", "Dristy", "Tahsin", "Naymer", "Messi", "CR7"]
 function App() {
 
   return (
     <>
       <h1 className='text-xl'>REACT Core Concepts</h1>
+
+      {
+        actors.map(actor =><Actor actor={actor} ></Actor>)
+      }
+
+      
+
       {/* <Student name="Mansur" dept="CSE " tool="Mobile"></Student>
       <Student name="Dristy" dept="CSE" tool="Laptop"></Student>
       <Student name="Tahsin" dept="CSE" tool="Pc"></Student>
@@ -17,10 +26,10 @@ function App() {
       <Player name="Naymer" goal="460"></Player> */}
 
 
-      <ToDo task= "Learn React" isDone={true}></ToDo>
+      {/* <ToDo task= "Learn React" isDone={true}></ToDo>
       <ToDo task= "Reviice Js" isDone={true}></ToDo>
       <ToDo task= "Take a shower" isDone={false}></ToDo>
-      <ToDo task= "Eat Now" isDone={false}></ToDo>
+      <ToDo task= "Eat Now" isDone={false}></ToDo> */}
 
     </>
   )
