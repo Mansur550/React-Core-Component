@@ -1,3 +1,3 @@
-export default function Book(){
-    return <li>Name: price:</li>
+export default function Book({book}){
+    return <li>Name:{book.name}, Price:{book.price}</li>
 }

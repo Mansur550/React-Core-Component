@@ -1,3 +1,5 @@
+import Book from "./book";
+
 export default  function Library({books}){
     return(
         <>
@@ -6,7 +8,7 @@ export default  function Library({books}){
         <h3>Address:</h3>
         <ul>
             {
-                books.map(book =>)
+                books.map(book => <Book key={book.id} book={book}></Book>)
             }
         </ul>
         </>
