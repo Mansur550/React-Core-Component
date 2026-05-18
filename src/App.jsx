@@ -29,7 +29,7 @@ function App() {
   return (
     <>
 
-      <Library></Library>
+      <Library books={books}></Library>
 
       <h1 className='text-xl'>REACT Core Concepts</h1>
 

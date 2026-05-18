@@ -1,8 +1,14 @@
-export default  function Library(){
+export default  function Library({books}){
     return(
         <>
         <h1>My Library </h1>
+        <p>Book Collection: {books.length}</p>
         <h3>Address:</h3>
+        <ul>
+            {
+                books.map(book =>)
+            }
+        </ul>
         </>
     )
 }
